@@ -1,7 +1,8 @@
-package ie.wit.wearit
+package ie.wit.wearit.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import ie.wit.wearit.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
