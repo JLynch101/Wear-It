@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "818460563337",
+    "project_id": "wear-it-98458",
+    "storage_bucket": "wear-it-98458.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:818460563337:android:b1581cf9fcb10e6b9b3358",
+        "android_client_info": {
+          "package_name": "ie.wit.wearit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "818460563337-0hh0bh9ljrinhfso1og154d4mktqvhlo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ie.wit.wearit",
+            "certificate_hash": "b57b4228507188499e1091f9bc5d24d2f7687d21"
+          }
+        },
+        {
+          "client_id": "818460563337-n109t1ios3kvpjtvntmvjnhpik2006qn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAeqPz1jQ4eXNYgq7iVpSqQ2OZU9hUtCt4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "818460563337-n109t1ios3kvpjtvntmvjnhpik2006qn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
