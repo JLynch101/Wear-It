@@ -1,5 +1,6 @@
 package ie.wit.wearit.activities
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -18,25 +19,31 @@ class RegisterActivity : AppCompatActivity() {
         setContentView(R.layout.activity_register)
 
         auth = FirebaseAuth.getInstance()
-        register_button.setOnClickListener {
-            if (register_email.text.trim().toString().isNotEmpty() || register_password.text.trim()
-                    .isNotEmpty()
+        register_form_button.setOnClickListener {
+            if (register_email.text.trim().toString().isNotEmpty() || register_password.text.trim().isNotEmpty() || register_fullname.text.trim().isNotEmpty()
             ) {
                 createUser(
                     register_email.text.trim().toString(),
-                    register_password.text.trim().toString()
+                    register_password.text.trim().toString(),
+                        register_fullname.text.trim().toString()
                 )
             } else {
-                Toast.makeText(this, "Enter Details", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "Please Enter Details", Toast.LENGTH_LONG).show()
             }
         }
+        Login_form_button.setOnClickListener{
+            val intent = Intent(this,LoginActivity::class.java)
+            startActivity(intent)
+        }
     }
-    fun createUser(email:String, password:String){
+    fun createUser(email:String, password:String, fullname:String){
         auth.createUserWithEmailAndPassword(email,password)
             .addOnCompleteListener(this){task ->
                 if(task.isSuccessful){
                     Log.e("Task Message","Successful")
                     Toast.makeText(baseContext, "Sign-up Successful.", Toast.LENGTH_SHORT).show()
+                    var intent = Intent(this,LoginActivity::class.java)
+                    startActivity(intent)
                 }
                 else{
                     Log.e("Task Message","Failed..."+task.exception)
@@ -46,4 +53,5 @@ class RegisterActivity : AppCompatActivity() {
 
     }
 
-}
+    }
+
