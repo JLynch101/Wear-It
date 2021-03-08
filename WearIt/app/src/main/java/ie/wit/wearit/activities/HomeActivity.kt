@@ -1,6 +1,7 @@
 package ie.wit.wearit.activities
 
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.snackbar.Snackbar
@@ -13,9 +14,22 @@ import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
+import androidx.recyclerview.widget.LinearLayoutManager
+import ie.wit.wearit.Firebase.FirebaseRepo
 import ie.wit.wearit.R
+import ie.wit.wearit.products.ProductListAdapter
+import ie.wit.wearit.products.ProductModel
+import kotlinx.android.synthetic.main.fragment_home.*
 
-class HomeActivity : AppCompatActivity() {
+
+    const val TAG: String = "HOMEPAGE_LOG"
+    class HomeActivity : AppCompatActivity() {
+
+    private val firebaseRepo: FirebaseRepo =
+        FirebaseRepo()
+
+    private var productList: List<ProductModel> = ArrayList()
+    private val productListAdapter: ProductListAdapter = ProductListAdapter(productList)
 
     private lateinit var appBarConfiguration: AppBarConfiguration
 
@@ -24,6 +38,26 @@ class HomeActivity : AppCompatActivity() {
         setContentView(R.layout.activity_nav_drawer)
         val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
+
+
+        product_list.layoutManager  = LinearLayoutManager(this)
+        product_list.adapter = productListAdapter
+
+        if(firebaseRepo.getUser() == null){
+            // create new user
+            firebaseRepo.createUser().addOnCompleteListener{
+                if (it.isSuccessful){
+                    loadProductData()
+                }else{
+                    Log.d(TAG, "Error:${it.exception!!.message}")
+                }
+            }
+        } else {
+            //user logged in
+            loadProductData()
+        }
+        product_list.layoutManager  = LinearLayoutManager(this)
+        product_list.adapter = productListAdapter
 
         val fab: FloatingActionButton = findViewById(R.id.fab)
         fab.setOnClickListener { view ->
@@ -39,6 +73,18 @@ class HomeActivity : AppCompatActivity() {
                 R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow), drawerLayout)
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+    }
+
+    private fun loadProductData() {
+    firebaseRepo.getProductList().addOnCompleteListener{
+        if(it.isSuccessful){
+            productList = it.result!!.toObjects(ProductModel::class.java)
+            productListAdapter.productListItems = productList
+            productListAdapter.notifyDataSetChanged()
+        }else{
+            Log.d(TAG, "Error: ${it.exception!!.message}")
+        }
+    }
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {

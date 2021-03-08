@@ -13,7 +13,6 @@
         android:theme="@style/Theme.WearIt">
         <activity
             android:name=".activities.HomeActivity"
-            android:label="@string/title_activity_nav_drawer"
             android:theme="@style/Theme.WearIt.NoActionBar"></activity>
         <activity
             android:name=".activities.SplashScreenActivity"
@@ -31,10 +30,6 @@
             android:theme="@style/Theme.Design.NoActionBar"></activity>
         <activity
             android:name=".activities.LoginActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.Design.NoActionBar"></activity>
-        <activity
-            android:name=".activities.MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.Design.NoActionBar"></activity>
     </application>
