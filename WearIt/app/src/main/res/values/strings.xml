@@ -4,7 +4,9 @@
     <string name="email_title">Email Address</string>
     <string name="password_title">Password</string>
     <string name="login_button_text">LOGIN</string>
-    <string name="register_button_text">REGISTER</string>
+    <string name="need_to_Register">Open Account?</string>
     <string name="register_complete">COMPLETE</string>
     <string name="fullname_register">Full Name</string>
+    <string name="register_title">REGISTER</string>
+    <string name="already_account">Login to account?</string>
 </resources>

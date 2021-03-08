@@ -31,7 +31,7 @@ class RegisterActivity : AppCompatActivity() {
                 Toast.makeText(this, "Please Enter Details", Toast.LENGTH_LONG).show()
             }
         }
-        Login_form_button.setOnClickListener{
+        account_already.setOnClickListener{
             val intent = Intent(this,LoginActivity::class.java)
             startActivity(intent)
         }

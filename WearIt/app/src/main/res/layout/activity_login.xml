@@ -50,9 +50,9 @@
         android:layout_marginLeft="100px"
         android:layout_marginRight="100px"
         android:layout_marginTop="20px"
-        android:textSize="70px"
+        android:textSize="50px"
         android:padding="20px"
-        android:textColor="@color/white"/>
+        android:textColor="@color/blue"/>
 
     <TextView
         android:id="@+id/login_password_title"
@@ -76,13 +76,14 @@
         android:layout_marginLeft="100px"
         android:layout_marginRight="100px"
         android:layout_marginTop="20px"
-        android:textSize="70px"
+        android:textSize="50px"
         android:padding="20px"
         android:inputType="textPassword"
-        android:textColor="@color/white"/>
+        android:textColor="@color/blue"/>
     4
 
     <LinearLayout
+        android:id="@+id/buttonPanel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -99,15 +100,19 @@
             android:text="@string/login_title"
             android:background="@color/blue"/>
 
-        <Button
-            android:id="@+id/Register_form_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:background="@color/blue"
-            android:text="@string/register_button_text" />
-
     </LinearLayout>
+    <TextView
+        android:id="@+id/Register_form_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="50px"
+        android:text="@string/need_to_Register"
+        android:textColor="@color/blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonPanel"/>
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

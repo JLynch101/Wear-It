@@ -21,7 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="35dp"
-        android:text="@string/register_button_text"
+        android:text="@string/register_title"
         android:textColor="@color/blue"
         android:textSize="70px"
         app:layout_constraintEnd_toEndOf="parent"
@@ -40,6 +40,7 @@
         app:layout_constraintTop_toBottomOf="@id/register_title"/>
     <EditText
         android:id="@+id/register_fullname"
+        android:textColor="@color/blue"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
@@ -48,7 +49,7 @@
         android:layout_marginLeft="100px"
         android:layout_marginRight="100px"
         android:layout_marginTop="20px"
-        android:textSize="70px"
+        android:textSize="50px"
         android:padding="20px"/>
     <TextView
         android:id="@+id/register_email_title"
@@ -70,8 +71,9 @@
         app:layout_constraintTop_toBottomOf="@id/register_email_title"
         android:layout_marginLeft="100px"
         android:layout_marginRight="100px"
+        android:textColor="@color/blue"
         android:layout_marginTop="20px"
-        android:textSize="70px"
+        android:textSize="50px"
         android:padding="20px"/>
 
     <TextView
@@ -96,10 +98,12 @@
         android:layout_marginLeft="100px"
         android:layout_marginRight="100px"
         android:layout_marginTop="20px"
-        android:textSize="70px"
+        android:textColor="@color/blue"
+        android:textSize="50px"
         android:padding="20px"/>
 
     <LinearLayout
+        android:id="@+id/register_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -115,17 +119,20 @@
             android:layout_margin="5dp"
             android:background="@color/blue"
             android:text="@string/register_complete" />
-        <Button
-            android:id="@+id/Login_form_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:text="@string/login_title"
-            android:background="@color/blue"/>
 
 
 
     </LinearLayout>
-
+    <TextView
+        android:id="@+id/account_already"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textSize="50px"
+        android:text="@string/already_account"
+        android:textColor="@color/blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/register_layout"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
