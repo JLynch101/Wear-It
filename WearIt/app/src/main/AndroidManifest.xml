@@ -11,12 +11,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.WearIt">
+
         <activity
             android:name=".activities.SplashScreenActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.Design.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -30,7 +32,7 @@
             android:theme="@style/Theme.Design.NoActionBar" />
         <activity
             android:name=".activities.MainActivity"
-            android:theme="@style/Theme.WearIt.NoActionBar"></activity>
+            android:label="@string/title_activity_main"></activity>
     </application>
 
 </manifest>
