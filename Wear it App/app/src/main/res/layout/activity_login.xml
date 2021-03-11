@@ -4,7 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+<<<<<<< HEAD:Wear it App/app/src/main/res/layout/activity_login.xml
     tools:context=".main.activites.LoginActivity"
+=======
+    tools:context=".activities.LoginActivity"
+>>>>>>> parent of 072b202 (added bottom nav):WearIt/app/src/main/res/layout/activity_login.xml
     android:background="@color/light_blue">
 
     <ImageView

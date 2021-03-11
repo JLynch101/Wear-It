@@ -3,7 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+<<<<<<< HEAD:Wear it App/app/src/main/res/layout/activity_register.xml
     tools:context=".main.activites.RegisterActivity"
+=======
+    tools:context=".activities.RegisterActivity"
+>>>>>>> parent of 072b202 (added bottom nav):WearIt/app/src/main/res/layout/activity_register.xml
     android:background="@color/light_blue">
 
 
