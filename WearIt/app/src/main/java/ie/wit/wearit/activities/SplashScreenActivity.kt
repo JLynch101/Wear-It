@@ -5,8 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import ie.wit.wearit.R
-import ie.wit.wearit.ui.home.HomeFragment
-
 class SplashScreenActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -15,7 +13,7 @@ class SplashScreenActivity : AppCompatActivity() {
     @Suppress("DEPRECATION")
     Handler().postDelayed(
         {
-            startActivity(Intent(this@SplashScreenActivity, HomeActivity::class.java))
+            startActivity(Intent(this@SplashScreenActivity, LoginActivity::class.java))
             finish()
         },
         3000

@@ -12,26 +12,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.WearIt">
         <activity
-            android:name=".activities.HomeActivity"
-            android:theme="@style/Theme.WearIt.NoActionBar"></activity>
-        <activity
             android:name=".activities.SplashScreenActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.Design.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".activities.RegisterActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.Design.NoActionBar"></activity>
+            android:theme="@style/Theme.Design.NoActionBar" />
         <activity
             android:name=".activities.LoginActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.Design.NoActionBar"></activity>
+            android:theme="@style/Theme.Design.NoActionBar" />
+        <activity
+            android:name=".activities.MainActivity"
+            android:theme="@style/Theme.WearIt.NoActionBar"></activity>
     </application>
 
 </manifest>
