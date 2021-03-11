@@ -1,0 +1,2 @@
+ie/wit/wearit/BuildConfig.java
+ ie.wit.wearit.BuildConfig
