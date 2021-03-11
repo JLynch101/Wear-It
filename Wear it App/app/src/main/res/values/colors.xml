@@ -10,4 +10,7 @@
     <color name="light_blue">#AAE1FF</color>
     <color name="blue">#0876B1</color>
     <color name="dark_blue">#2897FA</color>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#4c90af</color>
 </resources>
