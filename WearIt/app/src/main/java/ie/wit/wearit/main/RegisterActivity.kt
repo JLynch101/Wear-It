@@ -1,4 +1,4 @@
-package ie.wit.wearit.activities
+package ie.wit.wearit.main
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.ktx.Firebase
 import ie.wit.wearit.R
 import kotlinx.android.synthetic.main.activity_register.*
 
