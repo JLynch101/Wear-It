@@ -1,8 +1,8 @@
-<<<<<<< HEAD:Wear it App/app/src/main/java/ie/wit/wearit/main/RegisterActivity.kt
-package ie.wit.wearit.main.activites
-=======
+
+
 package ie.wit.wearit.activities
->>>>>>> parent of 072b202 (added bottom nav):Wear it App/app/src/main/java/ie/wit/wearit/activities/RegisterActivity.kt
+
+
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -12,6 +12,7 @@ import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.ktx.Firebase
 import ie.wit.wearit.R
+import ie.wit.wearit.main.LoginActivity
 import kotlinx.android.synthetic.main.activity_register.*
 
 

@@ -1,8 +1,4 @@
-<<<<<<< HEAD:Wear it App/app/src/main/java/ie/wit/wearit/main/LoginActivity.kt
-package ie.wit.wearit.main.activites
-=======
-package ie.wit.wearit.activities
->>>>>>> parent of 072b202 (added bottom nav):Wear it App/app/src/main/java/ie/wit/wearit/activities/LoginActivity.kt
+package ie.wit.wearit.main
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -13,6 +9,8 @@ import android.content.Context
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.ktx.Firebase
+import ie.wit.wearit.activities.RegisterActivity
+import ie.wit.wearit.main.activites.MainActivity
 
 class LoginActivity : AppCompatActivity() {
 

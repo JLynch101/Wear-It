@@ -5,10 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/splashscreen"
-<<<<<<< HEAD:Wear it App/app/src/main/res/layout/activity_splash_screen.xml
-    tools:context=".main.activites.SplashScreenActivity">
-=======
     tools:context=".activities.SplashScreenActivity">
->>>>>>> parent of 072b202 (added bottom nav):WearIt/app/src/main/res/layout/activity_splash_screen.xml
 
 </androidx.constraintlayout.widget.ConstraintLayout>

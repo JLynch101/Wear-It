@@ -4,7 +4,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import ie.wit.wearit.R
+import ie.wit.wearit.main.fragments.AddFragment
 import ie.wit.wearit.main.fragments.CartFragment
+import ie.wit.wearit.main.fragments.HomeFragment
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
