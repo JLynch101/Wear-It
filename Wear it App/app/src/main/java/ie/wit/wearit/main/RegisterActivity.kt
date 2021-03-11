@@ -1,4 +1,4 @@
-package ie.wit.wearit.main.activites
+package ie.wit.wearit.main
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -31,7 +31,7 @@ class RegisterActivity : AppCompatActivity() {
             }
         }
         account_already.setOnClickListener{
-            val intent = Intent(this, LoginActivity::class.java)
+            val intent = Intent(this,LoginActivity::class.java)
             startActivity(intent)
         }
     }
@@ -41,7 +41,7 @@ class RegisterActivity : AppCompatActivity() {
                 if(task.isSuccessful){
                     Log.e("Task Message","Successful")
                     Toast.makeText(baseContext, "Sign-up Successful.", Toast.LENGTH_SHORT).show()
-                    var intent = Intent(this, LoginActivity::class.java)
+                    var intent = Intent(this,LoginActivity::class.java)
                     startActivity(intent)
                 }
                 else{

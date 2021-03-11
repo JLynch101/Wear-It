@@ -1,4 +1,4 @@
-package ie.wit.wearit.main.activites
+package ie.wit.wearit.main
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
