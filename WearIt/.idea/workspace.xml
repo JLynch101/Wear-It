@@ -19,16 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="39e7d8e9-5545-4257-ba4d-d32f85561ae9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Wear it App/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Wear it App/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="39e7d8e9-5545-4257-ba4d-d32f85561ae9" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[Pixel_3_API_29]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -48,7 +45,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Wear it App" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Wear it App/app" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
@@ -133,9 +130,14 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="198" key="FileChooserDialogImpl" timestamp="1615499896818">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="-1239" y="146" key="#app" timestamp="1615501288386">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
+    <state x="-1239" y="146" key="#app/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1615501288386" />
+    <state x="-1180" y="198" key="FileChooserDialogImpl" timestamp="1615501305462">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1180" y="198" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1615501305462" />
     <state x="740" y="198" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1615499896818" />
   </component>
 </project>
