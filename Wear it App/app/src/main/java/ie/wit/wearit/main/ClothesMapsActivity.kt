@@ -8,10 +8,10 @@ import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.Marker
 import com.google.android.gms.maps.model.MarkerOptions
-import org.wit.clothes.R
+import ie.wit.wearit.R
 import kotlinx.android.synthetic.main.activity_clothes_maps.*
 import kotlinx.android.synthetic.main.content_clothes_maps.*
-import org.wit.clothes.main.MainApp
+
 
 class ClothesMapsActivity : AppCompatActivity(), GoogleMap.OnMarkerClickListener {
 

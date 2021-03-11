@@ -8,8 +8,7 @@ import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.graphics.ImageDecoder
 import android.net.Uri
-import android.provider.MediaStore
-import org.wit.clothes.R
+import ie.wit.wearit.R
 import java.io.IOException
 
 fun showImagePicker(parent: Activity, id: Int) {

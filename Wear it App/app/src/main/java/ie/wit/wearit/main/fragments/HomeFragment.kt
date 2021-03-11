@@ -5,63 +5,88 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.*
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-import kotlinx.android.synthetic.main.activity_clothes_list.*
-import kotlinx.android.synthetic.main.card_clothes.view.*
+import ie.wit.wearit.R
+import ie.wit.wearit.main.ClothesAdapter
+import ie.wit.wearit.main.ClothesListener
+import ie.wit.wearit.main.ClothesMapsActivity
+import ie.wit.wearit.main.MainApp
+import ie.wit.wearit.main.models.ClothesModel
+import kotlinx.android.synthetic.main.fragment_home.*
 import org.jetbrains.anko.intentFor
 import org.jetbrains.anko.startActivity
 import org.jetbrains.anko.startActivityForResult
-import org.wit.clothes.R
-import org.wit.clothes.main.MainApp
-import org.wit.clothes.models.ClothesModel
 
-class ClothesListActivity : AppCompatActivity(), ClothesListener {
 
-    lateinit var app: MainApp
+private const val ARG_PARAM1 = "param1"
+private const val ARG_PARAM2 = "param2"
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_clothes_list)
-        app = application as MainApp
-        toolbar.title = title
-        setSupportActionBar(toolbar)
+class HomeFragment : Fragment() {
+    // TODO: Rename and change types of parameters
+    private var param1: String? = null
+    private var param2: String? = null
 
-        val layoutManager = LinearLayoutManager(this)
-        recyclerView.layoutManager = layoutManager
-        recyclerView.adapter = ClothesAdapter(app.clothess.findAll(), this)
-        loadClothess()
-    }
+    class ClothesListActivity : AppCompatActivity(), ClothesListener {
 
-    private fun loadClothess() {
-        showClothess( app.clothess.findAll())
-    }
+        lateinit var app: MainApp
 
-    fun showClothess (clothess: List<ClothesModel>) {
-        recyclerView.adapter = ClothesAdapter(clothess, this)
-        recyclerView.adapter?.notifyDataSetChanged()
-    }
+        override fun onCreate(savedInstanceState: Bundle?) {
+            super.onCreate(savedInstanceState)
+            setContentView(R.layout.fragment_home)
+            app = application as MainApp
+            toolbar.title = title
+            setSupportActionBar(toolbar)
 
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.menu_main, menu)
-        return super.onCreateOptionsMenu(menu)
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when (item.itemId) {
-            R.id.item_add -> startActivityForResult<ClothesActivity>(200)
-            R.id.item_map -> startActivity<ClothesMapsActivity>()
+            val layoutManager = LinearLayoutManager(this)
+            recyclerView.layoutManager = layoutManager
+            recyclerView.adapter = ClothesAdapter(app.clothess.findAll(), this)
+            loadClothess()
         }
-        return super.onOptionsItemSelected(item)
+
+        private fun loadClothess() {
+            showClothess(app.clothess.findAll())
+        }
+
+        fun showClothess(clothess: List<ClothesModel>) {
+            recyclerView.adapter = ClothesAdapter(clothess, this)
+            recyclerView.adapter?.notifyDataSetChanged()
+        }
+
+        override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+            menuInflater.inflate(R.menu.menu_main, menu)
+            return super.onCreateOptionsMenu(menu)
+        }
+
+        override fun onOptionsItemSelected(item: MenuItem): Boolean {
+            when (item.itemId) {
+                R.id.item_add -> startActivityForResult<AddFragment.ClothesActivity>(200)
+                R.id.item_map -> startActivity<ClothesMapsActivity>()
+            }
+            return super.onOptionsItemSelected(item)
+        }
+
+        override fun onClothesClick(clothes: ClothesModel) {
+            startActivityForResult(
+                intentFor<AddFragment.ClothesActivity>().putExtra(
+                    "clothes_edit",
+                    clothes
+                ), 0
+            )
+        }
+
+        override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+            loadClothess()
+            super.onActivityResult(requestCode, resultCode, data)
+        }
     }
 
-    override fun onClothesClick(clothes: ClothesModel) {
-        startActivityForResult(intentFor<ClothesActivity>().putExtra("clothes_edit", clothes), 0)
-    }
-
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        loadClothess()
-        super.onActivityResult(requestCode, resultCode, data)
-    }
+    fun newInstance(param1: String, param2: String) =
+        HomeFragment().apply {
+            arguments = Bundle().apply {
+                putString(ARG_PARAM1, param1)
+                putString(ARG_PARAM2, param2)
+            }
+        }
 }
 

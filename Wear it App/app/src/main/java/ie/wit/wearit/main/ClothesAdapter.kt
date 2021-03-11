@@ -5,10 +5,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import ie.wit.wearit.R
+import ie.wit.wearit.main.helpers.readImageFromPath
+import ie.wit.wearit.main.models.ClothesModel
 import kotlinx.android.synthetic.main.card_clothes.view.*
-import org.wit.clothes.R
-import org.wit.clothes.helpers.readImageFromPath
-import org.wit.clothes.models.ClothesModel
 
 interface ClothesListener {
     fun onClothesClick(clothes: ClothesModel)
