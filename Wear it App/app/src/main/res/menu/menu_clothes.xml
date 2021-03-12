@@ -6,10 +6,10 @@
         android:title="@string/menu_deleteClothes"
         android:visible="false"
         app:showAsAction="always"
-        android:textColor="@color/white"/>
+        android:textColor="@color/dark_blue"/>
     <item
         android:id="@+id/item_cancel"
         android:title="@string/menu_cancelClothes"
         app:showAsAction="always"
-        android:textColor="@color/white"/>
+        android:textColor="@color/dark_blue"/>
 </menu>

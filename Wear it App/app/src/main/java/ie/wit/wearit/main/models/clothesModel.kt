@@ -8,7 +8,7 @@ import kotlinx.android.parcel.Parcelize
 data class ClothesModel(var id: Long = 0,
                         var title: String = "",
                         var description: String = "",
-                        var price: String = "",
+                        var price: String = "$",
                         var product: String = "",
                         var image: String = "",
                         var lat : Double = 0.0,

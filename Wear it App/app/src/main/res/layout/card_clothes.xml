@@ -10,7 +10,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="16dp"
-        android:minHeight="200dp">
+        android:minHeight="200dp"
+        android:background="@color/dark_blue">
 
         <ImageView
             android:id="@+id/imageIcon"
@@ -24,20 +25,23 @@
             android:id="@+id/clothesTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20dp"
+            android:textSize="25dp"
             android:layout_toEndOf="@+id/imageIcon" />
+
+        <TextView
+            android:id="@+id/product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/clothesTitle"
+            android:textSize="18dp"
+            android:layout_toRightOf="@+id/imageIcon"/>
 
         <TextView
             android:id="@+id/description"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/clothesTitle"
-            android:layout_toRightOf="@+id/imageIcon"/>
-        <TextView
-            android:id="@+id/product"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/description"
+            android:layout_below="@id/product"
+            android:textSize="18dp"
             android:layout_toRightOf="@+id/imageIcon"/>
 
 
@@ -47,7 +51,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/description"
-            android:layout_toRightOf="@+id/imageIcon"/>
+            android:textSize="18dp"
+            android:layout_toRightOf="@+id/imageIcon"
+            android:text="$"/>
 
     </RelativeLayout>
 </androidx.cardview.widget.CardView>

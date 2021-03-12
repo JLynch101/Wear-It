@@ -6,7 +6,7 @@ import androidx.fragment.app.Fragment
 import ie.wit.wearit.R
 import ie.wit.wearit.main.fragments.AddFragment
 
-import ie.wit.wearit.main.fragments.CartFragment
+
 import ie.wit.wearit.main.fragments.HomeFragment
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
 
         val homeFragment = HomeFragment()
         val addFragment = AddFragment()
-        val cartFragment = CartFragment()
+
 
         makeCurrentFragment(homeFragment)
 
@@ -25,7 +25,6 @@ class MainActivity : AppCompatActivity() {
             when (it.itemId){
                 R.id.home_icon -> makeCurrentFragment(homeFragment)
                 R.id.add_icon -> makeCurrentFragment(addFragment)
-                R.id.cart_icon -> makeCurrentFragment(cartFragment)
             }
             true
         }

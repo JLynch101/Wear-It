@@ -3,9 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
 
+
     <item
-        android:id="@+id/item_add"
-        android:icon="@android:drawable/ic_menu_add"
-        android:title="@string/menu_addClothes"
-        app:showAsAction="always" />
+        android:id="@+id/menu"
+        android:title="@string/main_menu"
+        app:showAsAction="always"
+        android:textColor="@color/dark_blue"/>
 </menu>

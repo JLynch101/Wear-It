@@ -10,7 +10,8 @@
     android:id="@+id/fl_wrap"
     android:layout_width="match_parent"
     android:layout_above="@+id/bottom_nav"
-    android:layout_height="match_parent"/>
+    android:layout_height="match_parent"
+    android:background="@color/dark_blue"/>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_nav"
@@ -22,9 +23,20 @@
         app:itemIconTint="@color/dark_blue"
         app:itemTextColor="@color/dark_blue"
         app:menu="@menu/nav_menu"/>
-
+    <ImageView
+        android:id="@+id/header_logo"
+        android:layout_width="match_parent"
+        android:layout_height="149dp"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toTopOf="@+id/login_title"/>
 <TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="hello"/>
+    android:layout_marginTop="150dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:text="@string/homepage_text1"
+    android:textColor="@color/white"
+    android:textSize="20dp"
+    android:gravity="center|top"/>
 </RelativeLayout>

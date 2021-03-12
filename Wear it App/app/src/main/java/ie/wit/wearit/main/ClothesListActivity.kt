@@ -46,7 +46,7 @@ class ClothesListActivity : AppCompatActivity(), ClothesListener {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
-            R.id.item_add -> startActivityForResult<ClothesActivity>(200)
+            R.id.menu -> super.onBackPressed()
 
         }
         return super.onOptionsItemSelected(item)
