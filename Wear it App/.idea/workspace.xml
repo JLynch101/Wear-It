@@ -38,13 +38,13 @@
       <change beforePath="$PROJECT_DIR$/app/src/main/java/ie/wit/wearit/main/ClothesListActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ie/wit/wearit/main/ClothesListActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/ie/wit/wearit/main/LoginActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ie/wit/wearit/main/LoginActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/ie/wit/wearit/main/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ie/wit/wearit/main/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/ie/wit/wearit/main/RegisterActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ie/wit/wearit/main/RegisterActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/ie/wit/wearit/main/SplashScreenActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ie/wit/wearit/main/SplashScreenActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/ie/wit/wearit/main/fragments/AddFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ie/wit/wearit/main/fragments/AddFragment.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/ie/wit/wearit/main/fragments/HomeFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ie/wit/wearit/main/fragments/HomeFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_clothes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_clothes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_clothes_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_clothes_list.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_add.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_add.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/nav_menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/nav_menu.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +94,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/java/ie/wit/wearit/main/fragments" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../donationX" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -322,33 +322,33 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="477" y="189" key="#PSD/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1615499484930" />
-    <state x="92" y="92" width="1736" height="856" key="AVDManager" timestamp="1615511696245">
+    <state x="92" y="92" width="1736" height="856" key="AVDManager" timestamp="1615513752093">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="92" y="92" width="1736" height="856" key="AVDManager/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1615511696245" />
+    <state x="92" y="92" width="1736" height="856" key="AVDManager/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1615513752093" />
     <state x="540" y="275" key="AndroidCreateResourceFileDialog" timestamp="1615509585020">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="540" y="275" key="AndroidCreateResourceFileDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1615509585020" />
-    <state x="740" y="198" key="FileChooserDialogImpl" timestamp="1615502251745">
+    <state x="740" y="198" key="FileChooserDialogImpl" timestamp="1615515952863">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="198" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1615502251745" />
-    <state width="1876" height="281" key="GridCell.Tab.0.bottom" timestamp="1615511635255">
+    <state x="740" y="198" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1615515952863" />
+    <state width="1876" height="239" key="GridCell.Tab.0.bottom" timestamp="1615516096055">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1615511635255" />
-    <state width="1876" height="281" key="GridCell.Tab.0.center" timestamp="1615511635255">
+    <state width="1876" height="239" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1615516096055" />
+    <state width="1876" height="239" key="GridCell.Tab.0.center" timestamp="1615516096055">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="281" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1615511635255" />
-    <state width="1876" height="281" key="GridCell.Tab.0.left" timestamp="1615511635255">
+    <state width="1876" height="239" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1615516096055" />
+    <state width="1876" height="239" key="GridCell.Tab.0.left" timestamp="1615516096055">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="281" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1615511635255" />
-    <state width="1876" height="281" key="GridCell.Tab.0.right" timestamp="1615511635255">
+    <state width="1876" height="239" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1615516096055" />
+    <state width="1876" height="239" key="GridCell.Tab.0.right" timestamp="1615516096055">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="281" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1615511635255" />
+    <state width="1876" height="239" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1615516096055" />
   </component>
 </project>

@@ -13,10 +13,7 @@ import ie.wit.wearit.main.helpers.showImagePicker
 import ie.wit.wearit.main.models.ClothesModel
 import ie.wit.wearit.main.models.Location
 import kotlinx.android.synthetic.main.activity_clothes.*
-import org.jetbrains.anko.AnkoLogger
-import org.jetbrains.anko.info
-import org.jetbrains.anko.intentFor
-import org.jetbrains.anko.toast
+import org.jetbrains.anko.*
 
 
 class ClothesActivity : AppCompatActivity(), AnkoLogger {
@@ -80,6 +77,7 @@ class ClothesActivity : AppCompatActivity(), AnkoLogger {
             startActivityForResult(intentFor<MapActivity>().putExtra("location", location), LOCATION_REQUEST)
         }
     }
+
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.menu_clothes, menu)

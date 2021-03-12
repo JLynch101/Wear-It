@@ -39,7 +39,7 @@
             android:theme="@style/Theme.Design.NoActionBar"></activity>
 
 
-        <activity android:name=".main.MainActivity"
+        <activity android:name=".main.activites.MainActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.Design.NoActionBar">
         </activity>

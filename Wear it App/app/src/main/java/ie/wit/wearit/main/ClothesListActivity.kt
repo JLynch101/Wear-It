@@ -27,7 +27,6 @@ class ClothesListActivity : AppCompatActivity(), ClothesListener {
         app = application as MainApp
         toolbar.title = title
         setSupportActionBar(toolbar)
-
         val layoutManager = LinearLayoutManager(this)
         recyclerView.layoutManager = layoutManager
         recyclerView.adapter = ClothesAdapter(app.clothess.findAll(), this)
@@ -52,6 +51,7 @@ class ClothesListActivity : AppCompatActivity(), ClothesListener {
         when (item.itemId) {
             R.id.item_add -> startActivityForResult<ClothesActivity>(200)
             R.id.item_map -> startActivity<ClothesMapsActivity>()
+
         }
         return super.onOptionsItemSelected(item)
     }
