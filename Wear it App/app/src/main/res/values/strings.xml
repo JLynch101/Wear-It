@@ -14,7 +14,7 @@
 
     <string name="select_image">Select image</string>
 
-    <string name="hint_clothesTitle">Title</string>
+    <string name="hint_clothesTitle">Brand</string>
     <string name="hint_clothesDescription">Description of item </string>
     <string name="hint_clothesPrice">Enter Price </string>
     <string name="button_addClothes">Add item to store</string>
@@ -35,7 +35,10 @@
     <string name="title_notifications">Notifications</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="main_menu">Main Menu</string>
-    <string name="homepage_text1">This app is provide a user friendly and secure second hand clothing service</string>
+    <string name="homepage_text1">Here at Wear It</string>
+    <string name="homepage_text2">We provide a safe and easy way of getting rid of your unwanted clothes</string>
+    <string name="homepage_text3">Popular Brands</string>
+
     <!--
     This string is used for square devices and overridden by hello_world in
     values-round/strings.xml for round devices.

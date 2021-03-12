@@ -29,8 +29,7 @@
         android:layout_height="149dp"
         android:layout_gravity="center"
         android:scaleType="fitCenter"
-        android:src="@drawable/logo"
-        app:layout_constraintBottom_toTopOf="@+id/login_title"/>
+        android:src="@drawable/logo" />
 <TextView
     android:layout_marginTop="150dp"
     android:layout_width="match_parent"
@@ -39,4 +38,32 @@
     android:textColor="@color/white"
     android:textSize="20dp"
     android:gravity="center|top"/>
+    <TextView
+        android:layout_marginTop="200dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/homepage_text2"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:gravity="center|top"/>
+
+    <TextView
+        android:id="@+id/brandHead"
+        android:layout_marginTop="300dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/homepage_text3"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:gravity="center|top"/>
+
+    <ImageView
+        android:id="@+id/logos"
+        android:layout_width="match_parent"
+        android:layout_marginTop="350dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logos"
+        app:layout_constraintTop_toBottomOf="@id/header_logo" />
 </RelativeLayout>

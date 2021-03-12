@@ -9,4 +9,5 @@
         android:title="@string/main_menu"
         app:showAsAction="always"
         android:textColor="@color/dark_blue"/>
+
 </menu>
