@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_marginBottom="8dp"
     android:elevation="24dp">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="16dp">
+        android:padding="16dp"
+        android:minHeight="200dp">
 
         <ImageView
             android:id="@+id/imageIcon"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_marginRight="16dp"/>
+            android:gravity="center"/>
 
         <TextView
             android:id="@+id/clothesTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_toRightOf="@+id/imageIcon"
-            android:textSize="30sp"/>
+            android:textSize="20dp"
+            android:layout_toEndOf="@+id/imageIcon" />
 
         <TextView
             android:id="@+id/description"
@@ -34,11 +34,12 @@
             android:layout_below="@id/clothesTitle"
             android:layout_toRightOf="@+id/imageIcon"/>
 
+
         <TextView
             android:id="@+id/price"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/clothesTitle"
+            android:layout_below="@id/description"
             android:layout_toRightOf="@+id/imageIcon"/>
 
     </RelativeLayout>
