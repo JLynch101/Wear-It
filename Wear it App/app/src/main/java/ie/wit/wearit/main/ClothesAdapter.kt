@@ -8,7 +8,12 @@ import androidx.recyclerview.widget.RecyclerView
 import ie.wit.wearit.R
 import ie.wit.wearit.main.helpers.readImageFromPath
 import ie.wit.wearit.main.models.ClothesModel
+import kotlinx.android.synthetic.main.activity_clothes.view.*
 import kotlinx.android.synthetic.main.card_clothes.view.*
+import kotlinx.android.synthetic.main.card_clothes.view.clothesTitle
+import kotlinx.android.synthetic.main.card_clothes.view.description
+import kotlinx.android.synthetic.main.card_clothes.view.price as price
+
 
 interface ClothesListener {
     fun onClothesClick(clothes: ClothesModel)
@@ -32,8 +37,8 @@ class ClothesAdapter constructor(private var clothess: List<ClothesModel>,
 
         fun bind(clothes: ClothesModel, listener: ClothesListener) {
             itemView.clothesTitle.text = clothes.title
-            itemView.description.text = clothes.description
             itemView.price.text = clothes.price
+            itemView.description.text = clothes.description
             itemView.imageIcon.setImageBitmap(readImageFromPath(itemView.context, clothes.image))
             itemView.setOnClickListener { listener.onClothesClick(clothes) }
         }

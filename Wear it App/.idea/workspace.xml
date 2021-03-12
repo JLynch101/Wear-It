@@ -33,17 +33,13 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/ie/wit/wearit/main/ClothesActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ie/wit/wearit/main/ClothesActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/ie/wit/wearit/main/ClothesAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ie/wit/wearit/main/ClothesAdapter.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/ie/wit/wearit/main/ClothesListActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ie/wit/wearit/main/ClothesListActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/ie/wit/wearit/main/ClothesMapsActivity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/ie/wit/wearit/main/MapActivity.kt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/ie/wit/wearit/main/models/clothesJSONStore.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ie/wit/wearit/main/models/clothesJSONStore.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/ie/wit/wearit/main/models/clothesMemStore.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ie/wit/wearit/main/models/clothesMemStore.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/ie/wit/wearit/main/models/clothesModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ie/wit/wearit/main/models/clothesModel.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_clothes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_clothes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_clothes_maps.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_map.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/menu_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/card_clothes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/card_clothes.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -338,21 +334,25 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="198" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1615515952863" />
-    <state width="1876" height="239" key="GridCell.Tab.0.bottom" timestamp="1615516096055">
+    <state width="1876" height="239" key="GridCell.Tab.0.bottom" timestamp="1615520317845">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="239" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1615516096055" />
-    <state width="1876" height="239" key="GridCell.Tab.0.center" timestamp="1615516096055">
+    <state width="1876" height="239" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1615520317845" />
+    <state width="1876" height="239" key="GridCell.Tab.0.center" timestamp="1615520317845">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="239" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1615516096055" />
-    <state width="1876" height="239" key="GridCell.Tab.0.left" timestamp="1615516096055">
+    <state width="1876" height="239" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1615520317845" />
+    <state width="1876" height="239" key="GridCell.Tab.0.left" timestamp="1615520317845">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="239" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1615516096055" />
-    <state width="1876" height="239" key="GridCell.Tab.0.right" timestamp="1615516096055">
+    <state width="1876" height="239" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1615520317845" />
+    <state width="1876" height="239" key="GridCell.Tab.0.right" timestamp="1615520317845">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1876" height="239" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1615516096055" />
+    <state width="1876" height="239" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1615520317845" />
+    <state x="683" y="291" key="refactoring.ChangeSignatureDialog" timestamp="1615520548552">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="683" y="291" key="refactoring.ChangeSignatureDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1615520548552" />
   </component>
 </project>
