@@ -2,7 +2,13 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <dimen name="button_radius">10dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
+<<<<<<< HEAD
     <dimen name="design_bottom_navigation_icon_size" tools:override="true">20dp</dimen>
 
 
+=======
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+>>>>>>> b7b49961baf046e2205f6f42b1bfebf5cbbe75b8
 </resources>
