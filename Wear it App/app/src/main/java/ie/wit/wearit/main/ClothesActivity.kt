@@ -18,6 +18,7 @@ import org.jetbrains.anko.info
 import org.jetbrains.anko.intentFor
 import org.jetbrains.anko.toast
 
+
 class ClothesActivity : AppCompatActivity(), AnkoLogger {
 
     var clothes = ClothesModel()

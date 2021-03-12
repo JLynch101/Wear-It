@@ -1,4 +1,5 @@
-package org.wit.clothes.activities
+package ie.wit.wearit.main
+
 
 import android.content.Intent
 import android.os.Bundle

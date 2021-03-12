@@ -1,6 +1,6 @@
 
 
-package ie.wit.wearit.activities
+package ie.wit.wearit.main
 
 
 

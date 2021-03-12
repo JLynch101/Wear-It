@@ -10,8 +10,9 @@
         android:id="@+id/fl_wrap"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/bottom_nav"
-        ></FrameLayout>
+        android:layout_above="@+id/bottom_nav">
+
+    </FrameLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_nav"
@@ -23,5 +24,6 @@
         app:itemIconTint="@color/dark_blue"
         app:itemTextColor="@color/dark_blue"
         app:menu="@menu/nav_menu"/>
+
 
 </RelativeLayout>

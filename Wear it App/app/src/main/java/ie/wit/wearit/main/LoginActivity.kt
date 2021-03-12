@@ -5,12 +5,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import ie.wit.wearit.R
 import kotlinx.android.synthetic.main.activity_login.*
-import android.content.Context
+
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.ktx.Firebase
-import ie.wit.wearit.activities.RegisterActivity
-import ie.wit.wearit.main.activites.MainActivity
+
 
 class LoginActivity : AppCompatActivity() {
 
