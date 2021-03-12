@@ -7,7 +7,8 @@ import ie.wit.wearit.R
 import ie.wit.wearit.main.fragments.AddFragment
 
 import ie.wit.wearit.main.fragments.CartFragment
-import ie.wit.wearit.main.fragments.HomeFragment
+import ie.wit.wearit.main.fragments.ExtraFragment
+import kotlinx.android.synthetic.main.activity_home.*
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -15,13 +16,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val homeFragment = HomeFragment()
+        val homeFragment = ExtraFragment()
         val addFragment = AddFragment()
         val cartFragment = CartFragment()
 
         makeCurrentFragment(homeFragment)
 
-        bottom_nav.setOnNavigationItemSelectedListener {
+        nav_view.setOnNavigationItemSelectedListener {
             when (it.itemId){
                 R.id.home_icon -> makeCurrentFragment(homeFragment)
                 R.id.add_icon -> makeCurrentFragment(addFragment)
