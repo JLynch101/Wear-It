@@ -33,6 +33,7 @@ class ClothesAdapter constructor(private var clothess: List<ClothesModel>,
         fun bind(clothes: ClothesModel, listener: ClothesListener) {
             itemView.clothesTitle.text = clothes.title
             itemView.description.text = clothes.description
+            itemView.price.text = clothes.price
             itemView.imageIcon.setImageBitmap(readImageFromPath(itemView.context, clothes.image))
             itemView.setOnClickListener { listener.onClothesClick(clothes) }
         }

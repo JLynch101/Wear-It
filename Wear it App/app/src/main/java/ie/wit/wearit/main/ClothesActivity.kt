@@ -6,12 +6,16 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
+import android.widget.AdapterView
+import android.widget.ArrayAdapter
+import android.widget.Spinner
+import android.widget.TextView
 import ie.wit.wearit.R
 import ie.wit.wearit.main.helpers.readImage
 import ie.wit.wearit.main.helpers.readImageFromPath
 import ie.wit.wearit.main.helpers.showImagePicker
 import ie.wit.wearit.main.models.ClothesModel
-import ie.wit.wearit.main.models.Location
 import kotlinx.android.synthetic.main.activity_clothes.*
 import org.jetbrains.anko.*
 
@@ -23,21 +27,32 @@ class ClothesActivity : AppCompatActivity(), AnkoLogger {
     val IMAGE_REQUEST = 1
     val LOCATION_REQUEST = 2
     var edit = false;
+    lateinit var option : Spinner
+    lateinit var result : TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_clothes)
+
+        val size = arrayOf("X-Small", "Small", "Medium", "Large", "X-Large")
+
+
+        size_spinner.adapter = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, size)
+
         toolbarAdd.title = title
         setSupportActionBar(toolbarAdd)
         info("Clothes Activity started..")
-
         app = application as MainApp
+        
+
+
 
         if (intent.hasExtra("clothes_edit")) {
             edit = true
             clothes = intent.extras?.getParcelable<ClothesModel>("clothes_edit")!!
             clothesTitle.setText(clothes.title)
             description.setText(clothes.description)
+            price.setText(clothes.price)
             clothesImage.setImageBitmap(readImageFromPath(this, clothes.image))
             if (clothes.image != null) {
                 chooseImage.setText(R.string.change_clothes_image)
@@ -48,6 +63,7 @@ class ClothesActivity : AppCompatActivity(), AnkoLogger {
         btnAdd.setOnClickListener() {
             clothes.title = clothesTitle.text.toString()
             clothes.description = description.text.toString()
+            clothes.price = price.text.toString()
             if (clothes.title.isEmpty()) {
                 toast(R.string.enter_clothes_title)
             } else {
@@ -59,7 +75,7 @@ class ClothesActivity : AppCompatActivity(), AnkoLogger {
                 }
             }
             info("add Button Pressed: $clothesTitle")
-            setResult(AppCompatActivity.RESULT_OK)
+            setResult(RESULT_OK)
             finish()
         }
 
@@ -67,15 +83,6 @@ class ClothesActivity : AppCompatActivity(), AnkoLogger {
             showImagePicker(this, IMAGE_REQUEST)
         }
 
-        clothesLocation.setOnClickListener {
-            val location = Location(52.245696, -7.139102, 15f)
-            if (clothes.zoom != 0f) {
-                location.lat = clothes.lat
-                location.lng = clothes.lng
-                location.zoom = clothes.zoom
-            }
-            startActivityForResult(intentFor<MapActivity>().putExtra("location", location), LOCATION_REQUEST)
-        }
     }
 
 
@@ -108,14 +115,7 @@ class ClothesActivity : AppCompatActivity(), AnkoLogger {
                     chooseImage.setText(R.string.change_clothes_image)
                 }
             }
-            LOCATION_REQUEST -> {
-                if (data != null) {
-                    val location = data.extras?.getParcelable<Location>("location")!!
-                    clothes.lat = location.lat
-                    clothes.lng = location.lng
-                    clothes.zoom = location.zoom
-                }
-            }
+
         }
     }
 }

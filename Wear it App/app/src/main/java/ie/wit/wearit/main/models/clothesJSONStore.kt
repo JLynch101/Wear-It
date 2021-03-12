@@ -47,9 +47,6 @@ class ClothesJSONStore : ClothesStore, AnkoLogger {
             foundClothes.title = clothes.title
             foundClothes.description = clothes.description
             foundClothes.image = clothes.image
-            foundClothes.lat = clothes.lat
-            foundClothes.lng = clothes.lng
-            foundClothes.zoom = clothes.zoom
         }
         serialize()
     }
