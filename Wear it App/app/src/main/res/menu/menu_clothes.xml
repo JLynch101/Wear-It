@@ -5,9 +5,11 @@
         android:id="@+id/item_delete"
         android:title="@string/menu_deleteClothes"
         android:visible="false"
-        app:showAsAction="always" />
+        app:showAsAction="always"
+        android:textColor="@color/white"/>
     <item
         android:id="@+id/item_cancel"
         android:title="@string/menu_cancelClothes"
-        app:showAsAction="always" />
+        app:showAsAction="always"
+        android:textColor="@color/white"/>
 </menu>

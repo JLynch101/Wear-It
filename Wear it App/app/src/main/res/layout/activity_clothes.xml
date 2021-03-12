@@ -5,7 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".main.ClothesActivity">
+    tools:context=".main.ClothesActivity"
+    android:background="@color/dark_blue">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -17,9 +18,10 @@
             android:id="@+id/appBarLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/colorAccent"
+            android:background="@color/light_blue"
             android:fitsSystemWindows="true"
             app:elevation="0dip"
+            android:textColor="@color/dark_blue"
             app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 
             <androidx.appcompat.widget.Toolbar
@@ -51,8 +53,25 @@
                     android:maxLength="25"
                     android:maxLines="1"
                     android:padding="8dp"
-                    android:textColor="@color/colorPrimaryDark"
-                    android:textSize="14sp" />
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:textSize="16sp"
+                    app:backgroundTint="@color/white"/>
+
+                <EditText
+                    android:id="@+id/product"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:hint="Product Type"
+                    android:inputType="text"
+                    android:maxLength="25"
+                    android:maxLines="1"
+                    android:padding="8dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    app:backgroundTint="@color/white"
+                    android:textSize="16sp"/>
 
                 <EditText
                     android:id="@+id/description"
@@ -64,42 +83,47 @@
                     android:maxLength="25"
                     android:maxLines="1"
                     android:padding="8dp"
-                    android:textColor="@color/colorPrimaryDark"
-                    android:textSize="14sp"/>
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    app:backgroundTint="@color/white"
+                    android:textSize="16sp"/>
 
                 <EditText
                     android:id="@+id/price"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="8dp"
-                    android:hint="@string/hint_clothesDescription"
+                    android:hint="@string/hint_clothesPrice"
                     android:inputType="text"
                     android:maxLength="25"
                     android:maxLines="1"
                     android:padding="8dp"
-                    android:textColor="@color/colorPrimaryDark"
-                    android:textSize="14sp"/>
-<Spinner
-    android:padding="8dp"
-    android:id="@+id/size_spinner"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"/>
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    app:backgroundTint="@color/white"
+                    android:textSize="16sp"/>
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="8dp"
-                    android:id="@+id/size_result"/>
+                    <Spinner
+                        android:padding="8dp"
+                        android:id="@+id/size_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:backgroundTint="@color/white"
+                        android:theme="@style/mySpinnerItemSelectedStyle"
+                        android:textColorHint="@color/white"
+                        />
+
                 <Button
                     android:id="@+id/chooseImage"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:layout_margin="16dp"
-                    android:background="@color/colorAccent"
+                    android:background="@color/white"
                     android:paddingBottom="8dp"
                     android:paddingTop="8dp"
                     android:text="@string/button_addImage"
-                    android:textColor="@color/colorPrimary"
+                    android:textColor="@color/dark_blue"
                     android:textSize="16sp"/>
 
                 <ImageView
@@ -114,12 +138,12 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_margin="16dp"
-                    android:background="@color/colorAccent"
+                    android:background="@color/white"
                     android:paddingTop="8dp"
                     android:paddingBottom="8dp"
                     android:stateListAnimator="@null"
                     android:text="@string/button_addClothes"
-                    android:textColor="@color/colorPrimary"
+                    android:textColor="@color/dark_blue"
                     android:textSize="16sp" />
             </LinearLayout>
         </ScrollView>

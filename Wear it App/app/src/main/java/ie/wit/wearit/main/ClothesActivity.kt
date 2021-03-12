@@ -55,6 +55,7 @@ class ClothesActivity : AppCompatActivity(), AnkoLogger {
             clothesTitle.setText(clothes.title)
             description.setText(clothes.description)
             price.setText(clothes.price)
+            product.setText(clothes.product)
             clothesImage.setImageBitmap(readImageFromPath(this, clothes.image))
             if (clothes.image != null) {
                 chooseImage.setText(R.string.change_clothes_image)
@@ -66,6 +67,7 @@ class ClothesActivity : AppCompatActivity(), AnkoLogger {
             clothes.title = clothesTitle.text.toString()
             clothes.description = description.text.toString()
             clothes.price = price.text.toString()
+            clothes.product = product.text.toString()
             if (clothes.title.isEmpty()) {
                 toast(R.string.enter_clothes_title)
             } else {

@@ -13,6 +13,7 @@ import kotlinx.android.synthetic.main.card_clothes.view.*
 import kotlinx.android.synthetic.main.card_clothes.view.clothesTitle
 import kotlinx.android.synthetic.main.card_clothes.view.description
 import kotlinx.android.synthetic.main.card_clothes.view.price as price
+import kotlinx.android.synthetic.main.card_clothes.view.product
 
 
 interface ClothesListener {
@@ -43,6 +44,7 @@ class ClothesAdapter(private var clothess: List<ClothesModel>,
             itemView.clothesTitle.text = clothes.title
             itemView.price.text = clothes.price
             itemView.description.text = clothes.description
+            itemView.product.text = clothes.product
             itemView.imageIcon.setImageBitmap(readImageFromPath(itemView.context, clothes.image))
             itemView.setOnClickListener {
                 listener.onClothesClick(clothes)

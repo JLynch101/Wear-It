@@ -13,4 +13,6 @@
     <color name="colorPrimary">#FFFFFF</color>
     <color name="colorPrimaryDark">#000000</color>
     <color name="colorAccent">#4c90af</color>
+    <color name = "hint_color">#74d1f2</color>
+    <color name="spinnerTextColor">#2897FA</color>
 </resources>

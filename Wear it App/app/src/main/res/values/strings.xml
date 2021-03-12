@@ -14,8 +14,9 @@
 
     <string name="select_image">Select image</string>
 
-    <string name="hint_clothesTitle">Brand and Type</string>
+    <string name="hint_clothesTitle">Title</string>
     <string name="hint_clothesDescription">Description of item </string>
+    <string name="hint_clothesPrice">Enter Price </string>
     <string name="button_addClothes">Add item to store</string>
     <string name="menu_addClothes">Add</string>
     <string name="menu_cancelClothes">Cancel</string>
