@@ -60,6 +60,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_stdlib_common_1_3_72.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules/app/Wear_It.app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/Wear_It.app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/ie/wit/wearit/main/ClothesAdapter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ie/wit/wearit/main/ClothesAdapter.kt" afterDir="false" />
@@ -72,6 +73,19 @@
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/ie/wit/wearit/main/ClothesActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ie/wit/wearit/main/ClothesActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/ie/wit/wearit/main/ClothesListActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ie/wit/wearit/main/ClothesListActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/ie/wit/wearit/main/ClothesMapsActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/ie/wit/wearit/main/MapActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/ie/wit/wearit/main/models/clothesJSONStore.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ie/wit/wearit/main/models/clothesJSONStore.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/ie/wit/wearit/main/models/clothesMemStore.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ie/wit/wearit/main/models/clothesMemStore.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/ie/wit/wearit/main/models/clothesModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/ie/wit/wearit/main/models/clothesModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_clothes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_clothes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_clothes_maps.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_map.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/menu_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_main.xml" afterDir="false" />
+>>>>>>> parent of d7bba24 (Added price variable)
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -373,6 +387,7 @@
     <state x="740" y="198" key="FileChooserDialogImpl" timestamp="1615548438941">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+<<<<<<< HEAD
     <state x="740" y="198" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1615548438941" />
     <state width="1876" height="281" key="GridCell.Tab.0.bottom" timestamp="1615555592143">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -394,5 +409,24 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="683" y="291" key="refactoring.ChangeSignatureDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1615553228910" />
+=======
+    <state x="740" y="198" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1615515952863" />
+    <state width="1876" height="239" key="GridCell.Tab.0.bottom" timestamp="1615516096055">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="239" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1615516096055" />
+    <state width="1876" height="239" key="GridCell.Tab.0.center" timestamp="1615516096055">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="239" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1615516096055" />
+    <state width="1876" height="239" key="GridCell.Tab.0.left" timestamp="1615516096055">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="239" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1615516096055" />
+    <state width="1876" height="239" key="GridCell.Tab.0.right" timestamp="1615516096055">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="239" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1615516096055" />
+>>>>>>> parent of d7bba24 (Added price variable)
   </component>
 </project>

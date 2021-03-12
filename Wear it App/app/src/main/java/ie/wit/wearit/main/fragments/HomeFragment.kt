@@ -12,7 +12,7 @@ import ie.wit.wearit.main.activites.MainActivity
 import kotlinx.android.synthetic.main.fragment_add.*
 
 
-class ExtraFragment: Fragment(){
+class HomeFragment: Fragment(){
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)

@@ -8,11 +8,11 @@ import androidx.recyclerview.widget.RecyclerView
 import ie.wit.wearit.R
 import ie.wit.wearit.main.helpers.readImageFromPath
 import ie.wit.wearit.main.models.ClothesModel
-import ie.wit.wearit.main.ui.home.HomeFragment
+import kotlinx.android.synthetic.main.activity_clothes.view.*
 import kotlinx.android.synthetic.main.card_clothes.view.*
 import kotlinx.android.synthetic.main.card_clothes.view.clothesTitle
 import kotlinx.android.synthetic.main.card_clothes.view.description
-import kotlinx.android.synthetic.main.card_clothes.view.price as price
+
 
 
 interface ClothesListener {

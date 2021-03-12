@@ -9,11 +9,11 @@
 <FrameLayout
     android:id="@+id/fl_wrap"
     android:layout_width="match_parent"
-    android:layout_above="@+id/bottom_nav.old"
+    android:layout_above="@+id/bottom_nav"
     android:layout_height="match_parent"/>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_nav.old"
+        android:id="@+id/bottom_nav"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"

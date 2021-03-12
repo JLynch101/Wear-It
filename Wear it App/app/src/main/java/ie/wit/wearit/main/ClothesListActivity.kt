@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import ie.wit.wearit.R
 import ie.wit.wearit.main.models.ClothesModel
 import kotlinx.android.synthetic.main.activity_clothes_list.*
+import kotlinx.android.synthetic.main.card_clothes.view.*
 import org.jetbrains.anko.intentFor
 import org.jetbrains.anko.startActivityForResult
 
