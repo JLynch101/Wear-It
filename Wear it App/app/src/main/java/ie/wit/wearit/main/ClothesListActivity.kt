@@ -4,11 +4,13 @@ package ie.wit.wearit.main
 import android.content.Intent
 import android.os.Bundle
 import android.view.*
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import ie.wit.wearit.R
 import ie.wit.wearit.main.*
+import ie.wit.wearit.main.activites.MainActivity
 import ie.wit.wearit.main.models.ClothesModel
 import kotlinx.android.synthetic.main.activity_clothes_list.*
 import org.jetbrains.anko.intentFor
@@ -24,6 +26,8 @@ class ClothesListActivity : AppCompatActivity(), ClothesListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_clothes_list)
         app = application as MainApp
+
+        
         toolbar.title = title
         setSupportActionBar(toolbar)
         val layoutManager = LinearLayoutManager(this)
@@ -31,6 +35,7 @@ class ClothesListActivity : AppCompatActivity(), ClothesListener {
         recyclerView.adapter = ClothesAdapter(app.clothess.findAll(), this)
         loadClothess()
     }
+
 
     private fun loadClothess() {
         showClothess( app.clothess.findAll())
