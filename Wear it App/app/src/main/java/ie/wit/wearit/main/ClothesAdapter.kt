@@ -12,7 +12,7 @@ import kotlinx.android.synthetic.main.activity_clothes.view.*
 import kotlinx.android.synthetic.main.card_clothes.view.*
 import kotlinx.android.synthetic.main.card_clothes.view.clothesTitle
 import kotlinx.android.synthetic.main.card_clothes.view.description
-
+import kotlinx.android.synthetic.main.card_clothes.view.price as price
 
 
 interface ClothesListener {
