@@ -79,13 +79,11 @@
                     android:padding="8dp"
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="14sp"/>
-                    <Spinner
-                        android:padding="8dp"
-                        android:id="@+id/size_spinner"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"/>
-
-
+<Spinner
+    android:padding="8dp"
+    android:id="@+id/size_spinner"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
 
                 <TextView
                     android:layout_width="match_parent"

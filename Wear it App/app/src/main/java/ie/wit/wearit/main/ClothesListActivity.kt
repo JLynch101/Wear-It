@@ -6,13 +6,11 @@ import android.os.Bundle
 import android.view.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import ie.wit.wearit.R
-import ie.wit.wearit.main.*
 import ie.wit.wearit.main.models.ClothesModel
 import kotlinx.android.synthetic.main.activity_clothes_list.*
+import kotlinx.android.synthetic.main.card_clothes.view.*
 import org.jetbrains.anko.intentFor
-import org.jetbrains.anko.startActivity
 import org.jetbrains.anko.startActivityForResult
 
 

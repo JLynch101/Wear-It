@@ -35,6 +35,7 @@
             android:layout_toRightOf="@+id/imageIcon"/>
 
 
+
         <TextView
             android:id="@+id/price"
             android:layout_width="wrap_content"

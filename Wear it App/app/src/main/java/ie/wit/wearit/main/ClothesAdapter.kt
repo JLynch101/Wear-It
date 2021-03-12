@@ -12,18 +12,22 @@ import kotlinx.android.synthetic.main.activity_clothes.view.*
 import kotlinx.android.synthetic.main.card_clothes.view.*
 import kotlinx.android.synthetic.main.card_clothes.view.clothesTitle
 import kotlinx.android.synthetic.main.card_clothes.view.description
-import kotlinx.android.synthetic.main.card_clothes.view.price as price
+
 
 
 interface ClothesListener {
     fun onClothesClick(clothes: ClothesModel)
 }
 
-class ClothesAdapter constructor(private var clothess: List<ClothesModel>,
-                                 private val listener: ClothesListener) : RecyclerView.Adapter<ClothesAdapter.MainHolder>() {
+class ClothesAdapter(private var clothess: List<ClothesModel>,
+                     private val listener: ClothesListener
+) : RecyclerView.Adapter<ClothesAdapter.MainHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MainHolder {
-        return MainHolder(LayoutInflater.from(parent.context).inflate(R.layout.card_clothes, parent, false))
+        return MainHolder(
+            LayoutInflater.from(parent.context).inflate
+                (R.layout.card_clothes, parent, false)
+        )
     }
 
     override fun onBindViewHolder(holder: MainHolder, position: Int) {
@@ -40,7 +44,10 @@ class ClothesAdapter constructor(private var clothess: List<ClothesModel>,
             itemView.price.text = clothes.price
             itemView.description.text = clothes.description
             itemView.imageIcon.setImageBitmap(readImageFromPath(itemView.context, clothes.image))
-            itemView.setOnClickListener { listener.onClothesClick(clothes) }
+            itemView.setOnClickListener {
+                listener.onClothesClick(clothes)
+
+            }
         }
     }
 }
