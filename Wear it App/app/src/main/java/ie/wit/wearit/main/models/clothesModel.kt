@@ -3,6 +3,8 @@ package ie.wit.wearit.main.models
 
 import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize
+import com.google.firebase.database.Exclude
+import com.google.firebase.database.IgnoreExtraProperties
 
 @Parcelize
 data class ClothesModel(var id: Long = 0,
