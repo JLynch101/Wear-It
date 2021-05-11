@@ -3,7 +3,6 @@
 package ie.wit.wearit.main
 
 
-
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
