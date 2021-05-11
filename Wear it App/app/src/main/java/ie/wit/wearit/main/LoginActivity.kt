@@ -16,6 +16,7 @@ import com.google.android.gms.common.api.ApiException
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
 import ie.wit.wearit.main.activites.MainActivity
+import ie.wit.wearit.main.fragments.HomeFragment
 
 
 class LoginActivity : AppCompatActivity() {

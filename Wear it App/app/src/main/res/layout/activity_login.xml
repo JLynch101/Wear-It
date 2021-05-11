@@ -122,6 +122,7 @@
         android:drawableStart="@drawable/ic_google"
         android:paddingStart="40dp"
         android:paddingEnd="40dp"
+        android:textColor="@color/black"
         android:text="@string/sign_in_with_google"
         android:textAllCaps="false"
         android:textSize="16sp"
