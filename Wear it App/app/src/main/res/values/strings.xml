@@ -38,6 +38,7 @@
     <string name="homepage_text1">Here at Wear It</string>
     <string name="homepage_text2">We provide a safe and easy way of getting rid of your unwanted clothes</string>
     <string name="homepage_text3">Popular Brands</string>
+    <string name="sign_in_with_google">Sign in With Google</string>
 
     <!--
     This string is used for square devices and overridden by hello_world in
