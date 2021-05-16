@@ -4,7 +4,7 @@
     tools:showIn="navigation_view">
     <item
         android:id="@+id/miItem1"
-        android:title="Listings"/>
+        android:title="Listings" />
 
     <item
         android:id="@+id/miItem2"
