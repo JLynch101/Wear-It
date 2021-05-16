@@ -41,6 +41,9 @@
     <string name="sign_in_with_google">Sign in With Google</string>
     <string name="open">Open</string>
     <string name="close">Close</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="nav_header_title">Wear It</string>
+    <string name="nav_header_subtitle">email@hotmail.com</string>
 
 
     <!--
