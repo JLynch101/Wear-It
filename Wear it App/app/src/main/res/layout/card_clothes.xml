@@ -58,13 +58,7 @@
             android:textColor="@color/white"
             android:layout_toRightOf="@+id/imageIcon"
             android:text="$"/>
-<Button
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_below="@id/price"
-    android:textSize="10dp"
-    android:text="Add to cart"
-    android:layout_toRightOf="@+id/imageIcon"/>
+
     </RelativeLayout>
 </androidx.cardview.widget.CardView>
 
