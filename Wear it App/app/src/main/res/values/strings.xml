@@ -44,8 +44,9 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="nav_header_title">Wear It</string>
     <string name="nav_header_subtitle">email@hotmail.com</string>
-
-
+    <string name="contactNo">Phone: 053 124 5673</string>
+    <string name="contactEmail">Email: info@wear-it.com</string>
+    <string name="Thankyou">Thank you for using Wear It</string>
     <!--
     This string is used for square devices and overridden by hello_world in
     values-round/strings.xml for round devices.

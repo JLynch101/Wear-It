@@ -11,7 +11,11 @@
         android:title="Add Product"/>
 
     <item
+        android:id="@+id/miItem4"
+        android:title="About Us"/>
+    <item
         android:id="@+id/miItem3"
         android:title="Logout"/>
+
 
 </menu>

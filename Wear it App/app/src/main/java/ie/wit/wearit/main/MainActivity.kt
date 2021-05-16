@@ -10,8 +10,10 @@ import androidx.core.content.ContextCompat.startActivity
 import androidx.fragment.app.Fragment
 import com.google.firebase.auth.FirebaseAuth
 import ie.wit.wearit.R
+import ie.wit.wearit.main.AboutUs
 import ie.wit.wearit.main.LoginActivity
 import ie.wit.wearit.main.MainApp
+import ie.wit.wearit.main.fragments.AboutUsFragment
 import ie.wit.wearit.main.fragments.AddFragment
 import ie.wit.wearit.main.fragments.HomeFragment
 import kotlinx.android.synthetic.main.activity_main.*
@@ -35,6 +37,7 @@ class MainActivity : AppCompatActivity() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         val homeFragment = HomeFragment()
         val addFragment = AddFragment()
+        val AboutUsFragment = AboutUsFragment()
         navView.getHeaderView(0).nav_header_email.text = app.auth.currentUser?.email
 
 
@@ -43,6 +46,7 @@ class MainActivity : AppCompatActivity() {
                 R.id.miItem1 -> makeCurrentFragment(homeFragment)
                 R.id.miItem2 ->  makeCurrentFragment(addFragment)
                 R.id.miItem3 ->  signOut()
+                R.id.miItem4 ->  makeCurrentFragment(AboutUsFragment)
             }
             true
         }
