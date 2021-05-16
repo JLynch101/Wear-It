@@ -1,38 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".main.activites.MainActivity">
-
-    <androidx.drawerlayout.widget.DrawerLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:id="@+id/drawerLayout">
-
-    <androidx.constraintlayout.widget.ConstraintLayout
+<androidx.drawerlayout.widget.DrawerLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/drawerLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:openDrawer="start">
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
-        <com.google.android.material.navigation.NavigationView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            app:headerLayout="@layout/nav_header"
-            app:menu="@menu/nav_drawer_menu"
-            android:layout_gravity="start"
-            android:fitsSystemWindows="true"/>
-</androidx.drawerlayout.widget.DrawerLayout>
-
-
-
-<FrameLayout
-    android:id="@+id/fl_wrap"
+<androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
-    android:layout_above="@+id/bottom_nav"
-    android:layout_height="match_parent"
-    android:background="@color/dark_blue"/>
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/AppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <FrameLayout
+        android:id="@+id/fl_wrap"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/AppBar"
+        android:layout_height="match_parent"
+        android:background="@color/dark_blue"/>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_nav"
@@ -43,49 +46,21 @@
         app:itemBackground="@color/light_blue"
         app:itemIconTint="@color/dark_blue"
         app:itemTextColor="@color/dark_blue"
-        app:menu="@menu/nav_menu"/>
-    <ImageView
-        android:id="@+id/header_logo"
-        android:layout_width="match_parent"
-        android:layout_height="149dp"
-        android:layout_gravity="center"
-        android:scaleType="fitCenter"
-        android:src="@drawable/logo" />
-<TextView
-    android:layout_marginTop="150dp"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:text="@string/homepage_text1"
-    android:textColor="@color/white"
-    android:textSize="20dp"
-    android:gravity="center|top"/>
-    <TextView
-        android:layout_marginTop="200dp"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/homepage_text2"
-        android:textColor="@color/white"
-        android:textSize="20dp"
-        android:gravity="center|top"/>
+        app:layout_constraintBottom_toBottomOf="@+id/fl_wrap"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/nav_menu" />
+</androidx.constraintlayout.widget.ConstraintLayout>
 
-    <TextView
-        android:id="@+id/brandHead"
-        android:layout_marginTop="300dp"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/homepage_text3"
-        android:textColor="@color/white"
-        android:textSize="20dp"
-        android:gravity="center|top"/>
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:headerLayout="@layout/nav_header"
+            app:menu="@menu/nav_drawer_menu"
+            android:layout_gravity="start"
+            android:fitsSystemWindows="true"/>
 
-    <ImageView
-        android:id="@+id/logos"
-        android:layout_width="match_parent"
-        android:layout_marginTop="350dp"
-        android:layout_height="250dp"
-        android:layout_gravity="center"
-        android:scaleType="fitCenter"
-        android:src="@drawable/logos"
-        app:layout_constraintTop_toBottomOf="@id/header_logo" />
 
-</RelativeLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>
